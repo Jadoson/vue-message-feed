@@ -5,8 +5,8 @@
       :key="message.date"
       class="message"
     >
-      <a :href="message.authorUrl" target="_blank">{{ message.authorName }}</a>
-      - {{ formatDate(message.date) }}
+      <a :href="message.authorUrl" target="_blank">{{ message.authorName }}.</a>
+      - {{ formatDate(message.date) }}.
       <p
         :innerHTML="coloredContent(message.content, message.contentPostTones)"
       ></p>
