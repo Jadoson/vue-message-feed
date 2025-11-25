@@ -6,7 +6,7 @@
       class="message"
     >
       <a :href="message.authorUrl" target="_blank">{{ message.authorName }}</a>
-      - {{ formatDate(message.date.) }}
+      - {{ formatDate(message.date) }}
       <p
         :innerHTML="coloredContent(message.content, message.contentPostTones)"
       ></p>
