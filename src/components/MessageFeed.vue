@@ -72,7 +72,7 @@ export default {
 
     applyColor(content, start, length, color) {
       return content.replace(
-        new RegExp(`(.{${start}})(.{${length}}).`),
+        new RegExp(`(.{${start}})(.{${length}}.)`),
         `$1<span style="color:${color}">$2</span>`
       )
     },
