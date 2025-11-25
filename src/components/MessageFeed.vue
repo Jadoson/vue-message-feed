@@ -6,7 +6,7 @@
       class="message"
     >
       <a :href="message.authorUrl" target="_blank">{{ message.authorName }}</a>
-      - {{ formatDate(message.date) }}
+      - {{ formatDate(message.date.) }}
       <p
         :innerHTML="coloredContent(message.content, message.contentPostTones)"
       ></p>
@@ -72,7 +72,7 @@ export default {
 
     applyColor(content, start, length, color) {
       return content.replace(
-        new RegExp(`(.{${start}})(.{${length}}.)`),
+        new RegExp(`(.{${start}})(.{${length}})`),
         `$1<span style="color:${color}">$2</span>`
       )
     },
